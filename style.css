@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/2127039/pexels-photo-2127039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main{
+    width: 30%;
+    margin: 3% auto;
+    padding: 30px;
+    border-radius: 25px;
+    background-color: #ffffffa8;
+}
+.prt{
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    cursor: pointer;
+    width: 17%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 80px;
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #000000c2;
+    color: #fff;
+    margin-top: 20px;
+    transition: all 200ms ease-in-out;
+}
+#answer{
+    width: 100%;
+    padding: 20px;
+    background-color: #000000c2;
+    color: #fff;
+    font-size: 36px;
+    text-align: right;
+    outline: none;
+    border: none;
+    margin: 0;
+    border-radius: 13px;
+}
+#answer::placeholder{
+    color: #fff;
+    font-size: 36px;
+}
+input[type="button"]:hover{
+    background-color: orange;
+    color: black;
+}
+@media (max-width: 900px){
+    .main{
+        width: 50%;
+    }
+}
+@media (max-width: 650px){
+    .main{
+        width: 70%;
+    }
+}
+@media (max-width: 550px){
+    .main{
+        width: 80%;
+    }
+}
+@media (max-width: 475px){
+    .main{
+        width: 100%;
+    }
+    input{
+        width: 20%;
+    }
+}
